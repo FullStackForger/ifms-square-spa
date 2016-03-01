@@ -1,2 +1,4 @@
 angular
-	.module('squareApp', [])
+	.module('squareApp', [
+		'newsFeed'
+	])

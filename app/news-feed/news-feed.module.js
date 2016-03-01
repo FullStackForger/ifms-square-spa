@@ -1,0 +1,4 @@
+angular
+	.module('newsFeed', [
+		'ngResource'
+	])

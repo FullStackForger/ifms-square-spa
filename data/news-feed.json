@@ -1,0 +1,34 @@
+[{
+	"created_at": "Mon Feb 29 17:33:25 +0000 2016",
+	"id": "704358827571937280",
+	"text": "Very first lorem ipsum update",
+	"user": {
+		"id": 3289945685,
+		"name": "IndieForger",
+		"screen_name": "indieforger"
+	},
+	"retweet_count": 10,
+	"favorite_count": 3
+},{
+	"created_at": "Sat Mar 1 15:20:25 +0000 2016",
+	"id": "704358827511937280",
+	"text": "Second lorem ipsum lorem ipsum",
+	"user": {
+		"id": 3289945685,
+		"name": "IndieForger",
+		"screen_name": "indieforger"
+	},
+	"retweet_count": 1,
+	"favorite_count": 3
+},{
+	"created_at": "Sat Mar 1 11:12:22 +0000 2016",
+	"id": "704358827571917280",
+	"text": "Another great update. This time with a longer lorem ipmsum text",
+	"user": {
+		"id": 3289945685,
+		"name": "IndieForger",
+		"screen_name": "indieforger"
+	},
+	"retweet_count": 11,
+	"favorite_count": 20
+}]

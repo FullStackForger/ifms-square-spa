@@ -5,11 +5,33 @@
 </head>
 <body>
 
+<div ng-controller="NewsFeed as newsFeed">
+	<div ng-repeat="update in newsFeed.data">
+		<div class="header">
+			<span class="author">@{{update.user.screen_name}}</span>
+			<span class="date">{{update.created_at}}</span>
+		</div>
+		<div class="body">
+			<h3>{{update.text}}</h3>
+		</div>
+		<div class="footer">
 
+			<span class="counter">&#9733; {{update.favorite_count+update.retweet_count}}</span>
+			<span class="counter">&#10084; {{update.favorite_count}}</span>
+			<span class="counter">&#8644; {{update.retweet_count}}</span>
+		</div>
+		<hr />
+	</div>
+</div>
 
-<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+<script src="app/news-feed/news-feed.module.js"></script>
+<script src="app/news-feed/news-feed.ctrl.js"></script>
 
 <script src="app/square.app.js"></script>
+
 
 </body>
 </html>
