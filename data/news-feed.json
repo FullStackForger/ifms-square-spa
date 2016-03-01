@@ -7,8 +7,8 @@
 		"name": "IndieForger",
 		"screen_name": "indieforger"
 	},
-	"retweet_count": 10,
-	"favorite_count": 3
+	"retweet_count": 5,
+	"favorite_count": 15
 },{
 	"created_at": "Sat Mar 1 15:20:25 +0000 2016",
 	"id": "704358827511937280",
@@ -18,8 +18,8 @@
 		"name": "IndieForger",
 		"screen_name": "indieforger"
 	},
-	"retweet_count": 1,
-	"favorite_count": 3
+	"retweet_count": 10,
+	"favorite_count": 5
 },{
 	"created_at": "Sat Mar 1 11:12:22 +0000 2016",
 	"id": "704358827571917280",
@@ -29,6 +29,6 @@
 		"name": "IndieForger",
 		"screen_name": "indieforger"
 	},
-	"retweet_count": 11,
-	"favorite_count": 20
+	"retweet_count": 30,
+	"favorite_count": 30
 }]
