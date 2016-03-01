@@ -1,0 +1,22 @@
+{
+  "name": "ifms-square-spa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "IndieForger <indieforger@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/indieforger/ifms-square-spa",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
