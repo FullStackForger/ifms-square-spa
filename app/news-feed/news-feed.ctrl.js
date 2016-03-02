@@ -4,33 +4,19 @@ angular
 	.module('newsFeed')
 	.controller('NewsFeed', NewsListController)
 
-NewsListController.$inject = ['$scope', '$http']
-function NewsListController($scope, $http) {
+NewsListController.$inject = ['$scope', 'newsProxy']
+function NewsListController($scope, newsProxy) {
 	const mv = this
 
 	mv.sortKey = 'created'
 	mv.data = []
 	mv.setSortKey = setSortKey
 
-	function init () {
-		$http.get('/data/news-feed.json').then((jsonData) => {
-			mv.data = parseFeedData(jsonData.data)
-		})
-	}
+	init()
 
-	function parseFeedData(feedData) {
-		return Array.prototype.map.call(feedData, (data) => {
-			return {
-				id: data.id,
-				user: data.user,
-				created: new Date(data.created_at),
-				text: data.text,
-				actions: {
-					total: data.favorite_count + data.retweet_count,
-					favorites: data.favorite_count,
-					retweets: data.retweet_count
-				}
-			}
+	function init () {
+		newsProxy.getNews(function (data) {
+			mv.data = data
 		})
 	}
 
@@ -43,6 +29,4 @@ function NewsListController($scope, $http) {
 			mv.sortKey = '-' + sortKey
 		}
 	}
-
-	init()
 }
