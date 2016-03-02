@@ -23,7 +23,7 @@ function NewsListController($scope, $http) {
 			return {
 				id: data.id,
 				user: data.user,
-				created: data.created_at,
+				created: new Date(data.created_at),
 				text: data.text,
 				actions: {
 					total: data.favorite_count + data.retweet_count,
