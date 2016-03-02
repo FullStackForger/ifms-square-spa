@@ -5,7 +5,11 @@
 </head>
 <body>
 
-<div ng-controller="NewsFeed as newsFeed">
+<div ng-controller="HomePageCtrl as homepage">
+	<p>{{homepage.text}}</p>
+</div>
+
+<div ng-controller="NewsFeedCtrl as newsFeed">
 	<div class="toolbar">
 		<button ng-click="newsFeed.setSortKey('created')">date</button>
 		<button ng-click="newsFeed.setSortKey('actions.total')">actions</button>
@@ -36,6 +40,9 @@
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+
+<script src="app/homepage/homepage.module.js"></script>
+<script src="app/homepage/homepage.ctrl.js"></script>
 
 <script src="app/news-feed/news-feed.module.js"></script>
 <script src="app/news-feed/news-proxy.service.js"></script>

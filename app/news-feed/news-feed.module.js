@@ -1,4 +1,4 @@
 angular
-	.module('newsFeed', [
+	.module('square.newsFeed', [
 		'ngResource'
 	])

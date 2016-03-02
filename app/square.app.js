@@ -1,4 +1,5 @@
 angular
 	.module('squareApp', [
-		'newsFeed'
+		'square.homePage',
+		'square.newsFeed'
 	])

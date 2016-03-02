@@ -1,7 +1,7 @@
 "use strict"
 
 angular
-	.module('newsFeed')
+	.module('square.newsFeed')
 	.service('newsProxy', NewsProxy)
 
 NewsProxy.$inject = ['$http']

@@ -1,11 +1,11 @@
 "use strict"
 
 angular
-	.module('newsFeed')
-	.controller('NewsFeed', NewsListController)
+	.module('square.newsFeed')
+	.controller('NewsFeedCtrl', NewsFeedCtrl)
 
-NewsListController.$inject = ['$scope', 'newsProxy']
-function NewsListController($scope, newsProxy) {
+NewsFeedCtrl.$inject = ['$scope', 'newsProxy']
+function NewsFeedCtrl($scope, newsProxy) {
 	const mv = this
 
 	mv.sortKey = 'created'
