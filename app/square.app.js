@@ -9,7 +9,7 @@ angular
 function configure($routeProvider, $locationProvider) {
 	"use strict";
 	$routeProvider
-		.when('/homepage', {
+		.when('/', {
 			controller: 'HomePageCtrl',
 			controllerAs: 'homePage',
 			template: '<p>{{homePage.text}}</p>'
@@ -20,7 +20,7 @@ function configure($routeProvider, $locationProvider) {
 			templateUrl: 'app/news-feed/news-feed.tpl.html'
 		})
 		.otherwise({
-			redirectTo: '/homepage'
+			redirectTo: '/'
 		});
 
 	// enable HTML5 History API
