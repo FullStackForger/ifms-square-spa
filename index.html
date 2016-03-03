@@ -5,9 +5,12 @@
 </head>
 <body>
 
-<div ng-controller="HomePageCtrl as homepage">
-	<p>{{homepage.text}}</p>
-</div>
+<nav>
+	<a href="#/homepage">Homepage</a>
+	<a href="#/newsfeed">News feed</a>
+</nav>
+
+<div ng-view></div>
 
 <div ng-controller="NewsFeedCtrl as newsFeed">
 	<div class="toolbar">
@@ -40,6 +43,7 @@
 
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
 
 <script src="app/homepage/homepage.module.js"></script>
 <script src="app/homepage/homepage.ctrl.js"></script>
