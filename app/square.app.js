@@ -6,7 +6,7 @@ angular
 	])
 	.config(configure)
 
-function configure($routeProvider) {
+function configure($routeProvider, $locationProvider) {
 	"use strict";
 	$routeProvider
 		.when('/homepage', {
@@ -17,4 +17,7 @@ function configure($routeProvider) {
 		.otherwise({
 			redirectTo: '/'
 		});
+
+	// enable HTML5 History API
+	$locationProvider.html5Mode(true);
 }
