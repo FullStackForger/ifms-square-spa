@@ -20,7 +20,7 @@ function configure($routeProvider, $locationProvider) {
 			templateUrl: 'app/news-feed/news-feed.tpl.html'
 		})
 		.otherwise({
-			redirectTo: '/'
+			redirectTo: '/homepage'
 		});
 
 	// enable HTML5 History API
