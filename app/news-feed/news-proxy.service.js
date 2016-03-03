@@ -4,8 +4,8 @@ angular
 	.module('square.newsFeed')
 	.service('newsProxy', NewsProxy)
 
-NewsProxy.$inject = ['$http']
-function NewsProxy($http) {
+NewsProxy.$inject = ['$http', 'linkifyFilter']
+function NewsProxy($http, linkifyFilter) {
 
 	this.getNews = function (cb) {
 		$http
@@ -20,6 +20,7 @@ function NewsProxy($http) {
 			return {
 				id: data.id,
 				user: data.user,
+				userUrl: linkifyFilter('@'+data.user.screen_name),
 				created: new Date(data.created_at),
 				text: data.text,
 				actions: {

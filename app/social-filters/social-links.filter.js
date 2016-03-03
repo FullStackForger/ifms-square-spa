@@ -15,6 +15,7 @@ function socialLinks ($filter, $sce) {
 	return function(text, target) {
 		if (!text) return text;
 
+		// use ng-sanitize linky filter for auto-link geneation
 		var replacedText = $filter('linky')(text, target);
 		var targetAttr = '';
 		if (angular.isDefined(target)) {

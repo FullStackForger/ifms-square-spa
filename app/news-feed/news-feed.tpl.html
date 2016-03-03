@@ -11,7 +11,7 @@
 	</div>
 	<div ng-repeat="update in newsFeed.data | orderBy:newsFeed.sortKey">
 		<div class="header">
-			<span class="author">@{{update.user.screen_name}}</span>
+			<span class="author" ng-bind-html="update.userUrl"></span>
 			<span class="date">{{update.created | date:"MMM d, y h:mm:ss" }}</span>
 		</div>
 		<div class="body">
