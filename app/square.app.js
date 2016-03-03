@@ -11,8 +11,13 @@ function configure($routeProvider, $locationProvider) {
 	$routeProvider
 		.when('/homepage', {
 			controller: 'HomePageCtrl',
-			controllerAs: 'homepage',
-			template: '<p>{{homepage.text}}</p>'
+			controllerAs: 'homePage',
+			template: '<p>{{homePage.text}}</p>'
+		})
+		.when('/newsfeed', {
+			controller: 'NewsFeedCtrl',
+			controllerAs: 'newsFeed',
+			templateUrl: 'app/news-feed/news-feed.tpl.html'
 		})
 		.otherwise({
 			redirectTo: '/'
