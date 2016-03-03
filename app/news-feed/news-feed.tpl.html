@@ -15,7 +15,7 @@
 			<span class="date">{{update.created | date:"MMM d, y h:mm:ss" }}</span>
 		</div>
 		<div class="body">
-			<h3>{{update.text}}</h3>
+			<p ng-bind-html="update.text | linkify"></p>
 		</div>
 		<div class="footer">
 

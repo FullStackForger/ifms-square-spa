@@ -1,7 +1,7 @@
 [{
 	"created_at": "Mon Feb 29 17:33:25 +0000 2016",
 	"id": "704358827571937280",
-	"text": "Very first lorem ipsum update",
+	"text": "Very first lorem ipsum update by @indieforger",
 	"user": {
 		"id": 3289945685,
 		"name": "IndieForger",
@@ -12,7 +12,7 @@
 },{
 	"created_at": "Sat Mar 1 15:20:25 +0000 2016",
 	"id": "704358827511937280",
-	"text": "Second lorem ipsum lorem ipsum",
+	"text": "Second lorem ipsum with #twitter hashtag",
 	"user": {
 		"id": 3289945685,
 		"name": "IndieForger",
@@ -23,7 +23,7 @@
 },{
 	"created_at": "Sat Mar 1 11:12:22 +0000 2016",
 	"id": "704358827571917280",
-	"text": "Another great update. This time with a longer lorem ipmsum text",
+	"text": "Another great update. This time with #twitter and #socialmedia hashtags",
 	"user": {
 		"id": 3289945685,
 		"name": "IndieForger",
