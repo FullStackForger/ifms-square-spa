@@ -4,6 +4,5 @@ angular
 	.controller('HomePageCtrl', HomePageCtrl)
 
 function HomePageCtrl($scope) {
-	$scope = this
 	$scope.text = "Welcome to Twitter filter"
 }

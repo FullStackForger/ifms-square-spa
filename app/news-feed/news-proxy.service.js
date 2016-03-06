@@ -2,10 +2,10 @@
 
 angular
 	.module('square.newsFeed')
-	.service('newsProxy', NewsProxy)
+	.service('newsProxy', newsProxy)
 
-NewsProxy.$inject = ['$http', 'linkifyFilter']
-function NewsProxy($http, linkifyFilter) {
+newsProxy.$inject = ['$http', 'linkifyFilter']
+function newsProxy($http, linkifyFilter) {
 
 	this.getNews = function (cb) {
 		$http

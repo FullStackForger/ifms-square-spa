@@ -1,7 +1,7 @@
 angular
 	.module('squareApp', [
 		'ngRoute',
-		'socialFilters',
+		'square.socialFilters',
 		'square.homePage',
 		'square.newsFeed'
 	])

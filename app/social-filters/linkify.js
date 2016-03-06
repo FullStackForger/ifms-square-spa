@@ -6,13 +6,12 @@
 //    > bower install angular-sanitize --save
 // 2. use ng-bind-html directive in the template to allow html tags, eg.:
 //    <div ng-bind-html="property | linkify"></div>
-var app = angular.module('socialFilters', ['ngSanitize']);
+var app = angular.module('square.socialFilters', ['ngSanitize']);
 
 app.filter('linkify', socialLinks);
-
 socialLinks.$inject = ['$filter', '$sce']
 function socialLinks ($filter, $sce) {
-	return function(text, target) {
+	return function socialLinksFilter(text, target) {
 		if (!text) return text;
 
 		// use ng-sanitize linky filter for auto-link geneation
